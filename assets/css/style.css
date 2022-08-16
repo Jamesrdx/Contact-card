@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    font-size: 62.5%;
+}
+main{
+    display: flex;
+    justify-content: center;
+    
+
+}
+.card{
+    width: 40rem;
+    margin-top: 7rem;
+    height: 55rem;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    
+}
+.card__img-ctr{
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-size: cover;
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-image: url("../img/tinified/rusticburo.jpg");
+}
+
+.card__bckg{
+    width: 100%;
+    height: 13rem;
+}
+.card__profpick{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 7.5rem;
+    position: absolute;
+    top: 12rem;
+    
+}
