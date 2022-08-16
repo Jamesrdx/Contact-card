@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index,follow">
     <meta name="description" content="A nice presentation card">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/all.css">
+    
+    <script src="https://kit.fontawesome.com/28c3ed824a.js" crossorigin="anonymous"></script>
     <title>Contact card</title>
 </head>
 <body>
@@ -16,17 +20,34 @@
             <div class="card__img-ctr">
                 <img class="card__profpick" src="./assets/img/Profilepic.jpg" alt="">
             </div>
-            <div class="card__text">
+            <div class="card__text-ctr">
                 <h1>Jaime Granja</h1>
-                <p>Sofware developper</p>
-                <span class="card__projects" >See projects</span>
+                <span>Front-end developper</span>
+                
             </div>
             <div class="card__social-media">
                 <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-instagram"></i>
                 <i class="fa-brands fa-youtube"></i>
             </div>
+            <span class="card__projects" >See projects</span>
         </section>
     </main>
 </body>
+
+
+<script>
+    window.onload = function () {
+      var span = document.createElement('span');
+    
+      span.className = 'fas';
+      span.style.display = 'none';
+      document.body.insertBefore(span, document.body.firstChild);
+      
+      alert(window.getComputedStyle(span, null).getPropertyValue('font-family'));
+        
+      document.body.removeChild(span);
+    };
+    </script>
+    
 </html>

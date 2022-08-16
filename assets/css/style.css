@@ -7,25 +7,28 @@ html{
     font-size: 62.5%;
 }
 main{
+    height: 100vh;
     display: flex;
     justify-content: center;
+    background-color: #C1C9CB;
     
 
 }
 .card{
-    width: 40rem;
-    margin-top: 7rem;
+    width: 36rem;
+    margin-top: 3rem;
     height: 55rem;
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border-radius: 1rem;
 
     
 }
 .card__img-ctr{
     width: 100%;
-    height: 30rem;
+    height: 23rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,6 +37,7 @@ main{
     background-position: center ;
     background-repeat: no-repeat;
     background-image: url("../img/tinified/rusticburo.jpg");
+    border-radius: 1rem 1rem 0rem 0rem; 
 }
 
 .card__bckg{
@@ -41,10 +45,38 @@ main{
     height: 13rem;
 }
 .card__profpick{
-    width: 15rem;
-    height: 15rem;
-    border-radius: 7.5rem;
+    width: 18rem;
+    height: 18rem;
+    border-radius: 9rem;
     position: absolute;
-    top: 12rem;
+    top: 14rem;
     
+}
+.card__text-ctr{
+    position: relative;
+    top: 4rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: 
+    
+}
+.card__text-ctr h1{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.card__text-ctr span{
+    margin-top: 0.7rem;
+    font-size: 1.5rem;
+}
+.card__social-media{
+    height: 3rem;
+    background-color: blue;
+}
+.card__social-media i{
+    color: black;
+    width: 5rem;
+    height: 5rem;
 }
